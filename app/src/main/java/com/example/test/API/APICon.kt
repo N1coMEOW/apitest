@@ -25,7 +25,7 @@ public object RetrofitConnection
     fun getRetrofit() : Interface
     {
         return Retrofit.Builder()
-            .baseUrl("site")
+            .baseUrl("https://iis.ngknn.ru/NGKNN/МамшеваЮС/MedicMadlab/")
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().setLenient().create()))
             .build()
             .create(Interface::class.java)
